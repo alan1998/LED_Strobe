@@ -1,0 +1,270 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:LED_Flash-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D1
+U 1 1 57F2A564
+P 4300 2050
+F 0 "D1" H 4300 2150 50  0000 C CNN
+F 1 "LED" H 4300 1950 50  0000 C CNN
+F 2 "SMD_Mine:Led-Composite" H 4300 2050 50  0001 C CNN
+F 3 "" H 4300 2050 50  0000 C CNN
+	1    4300 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X02 P1
+U 1 1 57F2A5E5
+P 6450 2350
+F 0 "P1" H 6450 2500 50  0000 C CNN
+F 1 "P_In" V 6550 2350 50  0000 C CNN
+F 2 "JST:JST-XH2" H 6450 2350 50  0001 C CNN
+F 3 "" H 6450 2350 50  0000 C CNN
+	1    6450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NMOS_SGD Q1
+U 1 1 57F2B9C6
+P 3600 2500
+F 0 "Q1" H 3900 2550 50  0000 R CNN
+F 1 "Q_NMOS_SGD" H 4250 2450 50  0000 R CNN
+F 2 "SMD_Mine:SO-8_NFET" H 3800 2600 50  0001 C CNN
+F 3 "" H 3600 2500 50  0000 C CNN
+	1    3600 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 57F3C7FF
+P 6000 2900
+F 0 "#PWR01" H 6000 2650 50  0001 C CNN
+F 1 "GND" H 6000 2750 50  0000 C CNN
+F 2 "" H 6000 2900 50  0000 C CNN
+F 3 "" H 6000 2900 50  0000 C CNN
+	1    6000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 57F3CAC4
+P 6000 2350
+F 0 "C1" H 6025 2450 50  0000 L CNN
+F 1 "CP" H 6025 2250 50  0000 L CNN
+F 2 "SMD_Mine:C_Radial_P5_NoCan" H 6038 2200 50  0001 C CNN
+F 3 "" H 6000 2350 50  0000 C CNN
+	1    6000 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 2500 6000 2900
+Wire Wire Line
+	6000 2050 6000 2200
+Text Notes 2950 1750 0    60   ~ 0
+Rsense - 1206 film. eg TE connectivity RS 869-5296
+$Comp
+L R Rsense1
+U 1 1 57F3D1D2
+P 3700 3050
+F 0 "Rsense1" V 3780 3050 50  0000 C CNN
+F 1 "R100" V 3700 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 3630 3050 50  0001 C CNN
+F 3 "" H 3700 3050 50  0000 C CNN
+	1    3700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 57F3D2A7
+P 4300 2400
+F 0 "D2" H 4300 2500 50  0000 C CNN
+F 1 "LED" H 4300 2300 50  0000 C CNN
+F 2 "SMD_Mine:Led-Composite" H 4300 2400 50  0001 C CNN
+F 3 "" H 4300 2400 50  0000 C CNN
+	1    4300 2400
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D3
+U 1 1 57F3D36B
+P 4300 2700
+F 0 "D3" H 4300 2800 50  0000 C CNN
+F 1 "LED" H 4300 2600 50  0000 C CNN
+F 2 "SMD_Mine:Led-Composite" H 4300 2700 50  0001 C CNN
+F 3 "" H 4300 2700 50  0000 C CNN
+	1    4300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D4
+U 1 1 57F3D409
+P 4300 3050
+F 0 "D4" H 4300 3150 50  0000 C CNN
+F 1 "LED" H 4300 2950 50  0000 C CNN
+F 2 "SMD_Mine:Led-Composite" H 4300 3050 50  0001 C CNN
+F 3 "" H 4300 3050 50  0000 C CNN
+	1    4300 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D5
+U 1 1 57F3D44A
+P 4300 3350
+F 0 "D5" H 4300 3450 50  0000 C CNN
+F 1 "LED" H 4300 3250 50  0000 C CNN
+F 2 "SMD_Mine:Led-Composite" H 4300 3350 50  0001 C CNN
+F 3 "" H 4300 3350 50  0000 C CNN
+	1    4300 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 2150 6250 2300
+Connection ~ 6000 2150
+Connection ~ 6000 2550
+Wire Wire Line
+	6250 2550 6250 2400
+Wire Wire Line
+	6000 2050 4500 2050
+Wire Wire Line
+	4100 2050 4100 2400
+Wire Wire Line
+	4500 2400 4500 2700
+Wire Wire Line
+	4100 2700 4100 3050
+Wire Wire Line
+	4500 3050 4500 3350
+Wire Wire Line
+	3950 3350 3950 3450
+$Comp
+L GND #PWR02
+U 1 1 57F3D5B8
+P 3950 3450
+F 0 "#PWR02" H 3950 3200 50  0001 C CNN
+F 1 "GND" H 3950 3300 50  0000 C CNN
+F 2 "" H 3950 3450 50  0000 C CNN
+F 3 "" H 3950 3450 50  0000 C CNN
+	1    3950 3450
+	1    0    0    -1  
+$EndComp
+Text Label 6000 2050 0    60   ~ 0
+Vcc
+Wire Wire Line
+	3700 2300 3700 2100
+Wire Wire Line
+	3700 2700 3700 2900
+Wire Wire Line
+	3700 3200 3700 3350
+Connection ~ 3950 3350
+$Comp
+L R R1
+U 1 1 57F3D6E1
+P 3300 3050
+F 0 "R1" V 3380 3050 50  0000 C CNN
+F 1 "10k" V 3300 3050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 3230 3050 50  0001 C CNN
+F 3 "" H 3300 3050 50  0000 C CNN
+	1    3300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2500 3300 2500
+Wire Wire Line
+	3300 2400 3300 2900
+Wire Wire Line
+	3300 3200 3300 3350
+Connection ~ 3700 3350
+$Comp
+L CONN_01X02 P3
+U 1 1 57F3D905
+P 2500 2450
+F 0 "P3" H 2500 2600 50  0000 C CNN
+F 1 "Trig_In" V 2600 2450 50  0000 C CNN
+F 2 "JST:JST-XH2" H 2500 2450 50  0001 C CNN
+F 3 "" H 2500 2450 50  0000 C CNN
+	1    2500 2450
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2400 3300 2400
+Connection ~ 3300 2500
+Text Label 3300 2400 2    60   ~ 0
+Trig
+Wire Wire Line
+	2700 2500 2900 2500
+Wire Wire Line
+	2900 2500 2900 3350
+Connection ~ 3300 3350
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 57F404D0
+P 3900 3050
+F 0 "JP1" H 3900 3130 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3910 2990 50  0001 C CNN
+F 2 "My_Pin_Headers:Pin_Header_Straight_1x02" H 3900 3050 50  0001 C CNN
+F 3 "" H 3900 3050 50  0000 C CNN
+	1    3900 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 2950 3900 2850
+Wire Wire Line
+	3900 2850 3700 2850
+Connection ~ 3700 2850
+Wire Wire Line
+	3900 3150 3900 3350
+Connection ~ 3900 3350
+Wire Wire Line
+	6250 2150 6000 2150
+Wire Wire Line
+	6250 2550 6000 2550
+Wire Wire Line
+	2900 3350 3950 3350
+Wire Wire Line
+	4100 3350 4050 3350
+Wire Wire Line
+	4050 3350 4050 2100
+Wire Wire Line
+	4050 2100 3700 2100
+$EndSCHEMATC
