@@ -28,7 +28,6 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:LED_Flash-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -267,4 +266,6 @@ Wire Wire Line
 	4050 3350 4050 2100
 Wire Wire Line
 	4050 2100 3700 2100
+Text Notes 2950 1900 0    60   ~ 0
+Q1 = Fairchild 8pin logic level thing
 $EndSCHEMATC
