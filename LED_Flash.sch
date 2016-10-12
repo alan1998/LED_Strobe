@@ -28,6 +28,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:LED_Flash-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -69,9 +70,9 @@ L Q_NMOS_SGD Q1
 U 1 1 57F2B9C6
 P 3600 2500
 F 0 "Q1" H 3900 2550 50  0000 R CNN
-F 1 "Q_NMOS_SGD" H 4250 2450 50  0000 R CNN
+F 1 "FDS6574a" H 3800 2250 50  0000 R CNN
 F 2 "SMD_Mine:SO-8_NFET" H 3800 2600 50  0001 C CNN
-F 3 "" H 3600 2500 50  0000 C CNN
+F 3 "Farnell 2453420" H 3600 2500 50  0001 C CNN
 	1    3600 2500
 	1    0    0    -1  
 $EndComp
@@ -266,6 +267,8 @@ Wire Wire Line
 	4050 3350 4050 2100
 Wire Wire Line
 	4050 2100 3700 2100
-Text Notes 2950 1900 0    60   ~ 0
-Q1 = Fairchild 8pin logic level thing
+Text Notes 4250 3850 0    60   ~ 0
+e.g. OPE5685 Farnell 489-0930
+Text Notes 4450 4000 0    60   ~ 0
+Osram SFH4715AS   RS-876-9423 
 $EndSCHEMATC
